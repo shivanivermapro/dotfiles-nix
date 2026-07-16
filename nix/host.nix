@@ -28,9 +28,9 @@
     starship
   ];
 
-  system.primaryUser = "shreejitverma";
-  users.users.shreejitverma = {
-    home = "/Users/shreejitverma";
+  system.primaryUser = "shivaniverma";
+  users.users.shivaniverma = {
+    home = "/Users/shivaniverma";
     shell = pkgs.zsh;
   };
 
@@ -68,7 +68,7 @@
     "/opt/homebrew/bin"
     "/opt/homebrew/sbin"
     "/run/current-system/sw/bin"
-    "/etc/profiles/per-user/shreejitverma/bin"
+    "/etc/profiles/per-user/shivaniverma/bin"
   ];
 
   system.stateVersion = 6;
