@@ -48,8 +48,8 @@ The goal is to provide a reusable foundation that you can make your own.
 ### 1. Clone the repo
 
 ```bash
-git clone git@github.com:kunchenguid/dotfiles-mac-nix.git ~/github/dotfiles-mac-nix
-cd ~/github/dotfiles-mac-nix
+git clone git@github.com:kunchenguid/dotfiles-mac-nix.git ~/github/dotfiles-nix
+cd ~/github/dotfiles-nix
 ```
 
 ### 2. Replace the placeholders
@@ -102,7 +102,7 @@ rebuild
 This alias is included in the shell config and expands to the repo path used in this guide:
 
 ```bash
-/run/current-system/sw/bin/darwin-rebuild switch --flake ~/github/dotfiles-mac-nix#mac
+/run/current-system/sw/bin/darwin-rebuild switch --flake ~/github/dotfiles-nix#mac
 ```
 
 ## Where to add new tools
@@ -255,8 +255,8 @@ Nothing is assumed beyond a fresh macOS install with an admin account.
 
 ```bash
 xcode-select --install          # Apple CLT: git, make, clang (accept the GUI prompt)
-git clone https://github.com/<you>/dotfiles-mac-nix.git ~/github/dotfiles-mac-nix
-cd ~/github/dotfiles-mac-nix
+git clone https://github.com/<you>/dotfiles-mac-nix.git ~/github/dotfiles-nix
+cd ~/github/dotfiles-nix
 bash setup/mac.sh               # installs Nix, Homebrew, applies nix-darwin + Home Manager, installs nvm + Node LTS
 exec zsh                        # pick up the new environment
 ```
